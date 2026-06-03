@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo do Gato</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- LADO ESQUERDO -->
+        <div class="lado-esquerdo">
+            <img src="imgs/gatoPensando.jpg" alt="Gato" class="gato">
+            <div class="fala" id="falaGato"> Quer jogar comigo? </div>
+            <div class="botoes" id="botoesInicio">
+                <button id="btnSim"> Sim </button>
+                <button id="btnNao"> Não </button>
+            </div>
+    </div>
+        <!-- LADO DIREITO -->
+        <div class="lado-direito">
+            <h1 class="titulo">Jogo do Gato</h1>
+            <div class="dirMeioJogo">
+                <form id="formJogo">
+                    <input type="number" id="inNumero" min="1" max="100" placeholder="Digite um número" required>
+                    <button type="submit"> Tentar </button>
+                </form>
+                <div class="info">
+                    <h2>Erros: <span id="outErros">0</span></h2>
+                    <h2>Chances: <span id="outChances">6</span></h2>
+                    <h2>Números já tentados:</h2>
+                    <p id="outHistorico">Nenhum ainda</p>
+                </div>
+            </div>
+            <div class="placar">
+                <h1>👤 Jogador: <span id="placarJogador">0</span> | 😺 Gato: <span id="placarGato">0</span></h1>
+            </div>
+        </div>
+    </div>
+<audio id="somFeliz" src="sounds/somFeliz.mp3"></audio>
+<audio id="somTriste" src="sounds/somTriste.mp3"></audio>
+<script src="js/script.js"></script>
+</body>
+
+</html>
